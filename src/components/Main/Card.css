@@ -1,4 +1,4 @@
-.container {
+.cont {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -29,16 +29,17 @@
     margin-bottom: 10px;
   }
   
-  .card button {
+  .card .btn {
     background-color: #2196f3;
     color: #fff;
     padding: 10px 20px;
     border: none;
     border-radius: 5px;
     cursor: pointer;
+    text-decoration: none;
   }
   
-  .card button:hover {
+  .card .btn:hover {
     background-color: #1976d2;
   }
   
