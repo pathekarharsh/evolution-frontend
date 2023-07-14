@@ -1,5 +1,7 @@
 import React, { useState } from 'react';
 import './ScanLogin.css';
+import Footer from '../Footer';
+import { Link } from 'react-router-dom';
 
 function ScanLoginPage() {
   const [email, setEmail] = useState('');
@@ -41,8 +43,9 @@ function ScanLoginPage() {
             required
           />
         </div>
-        <button type="submit">Login</button>
+        <Link to="scan-qr" className='btn' type="submit">Login</Link>
       </form>
+      <Footer/>
     </div>
   );
 }

@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import './TeamLogin.css';
+import Footer from '../Footer';
 
 function LoginPage() {
   const [email, setEmail] = useState('');
@@ -43,6 +44,7 @@ function LoginPage() {
         </div>
         <button type="submit">Login</button>
       </form>
+      <Footer/>
     </div>
   );
 }

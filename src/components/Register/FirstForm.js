@@ -1,5 +1,7 @@
 import React, { useState } from "react";
 import "./FirstForm.css"
+import { Link } from "react-router-dom";
+import Footer from "../Footer";
 
 function RegistrationForm() {
   const [registrationId, setRegistrationId] = useState("");
@@ -110,8 +112,9 @@ function RegistrationForm() {
             />
           </label>
         </div>
-        <button type="submit">Submit</button>
+        <Link to="/payment" class="btn" type="submit">Payment</Link>
       </form>
+      <Footer/>
     </div>
   );
 }
